@@ -8,7 +8,12 @@
 */
 
 function isAnagram(str1, str2) {
-
+if(sort(str1) ==sort (str2)){
+  return true;
+}else{
+  return false;
 }
-
+}
+var ans = isAnagram("mansi","namsi");
+console.log(ans);
 module.exports = isAnagram;
