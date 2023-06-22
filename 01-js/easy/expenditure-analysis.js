@@ -9,6 +9,41 @@
 */
 
 function calculateTotalSpentByCategory(transactions) {
+  function solve(transation){
+  var spendEstimates = {}
+
+  for (var i=0; i<transation.length; i++){
+    var t = transations[i];
+    if (spendEstimates[t.category]){
+      spendEstimates[t.category] = spendEstimates[t.category] + t.price
+    }else{
+      spendEstimates[t.category] = t.price
+    }
+  }
+  console.log(spendEstimates)
+}
+var transations = [
+  { itemname: "coco cola",
+   category: "drink",
+   price: "30", 
+   timestamp: "30-may-2023"
+  },
+   { itemname: "kachori",
+   category: "food",
+   price: "20", 
+   timestamp: 3"-may-2023"
+  },
+   { itemname: "honeychilli",
+   category: "food",
+   price: "100", 
+   timestamp:20-may-2023
+  },
+  
+   
+solve(transation)
+
+  
+]
   return [];
 }
 
